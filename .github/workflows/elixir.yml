@@ -23,7 +23,7 @@ jobs:
           - elixir-version: "default"
             erlang-version: "default"
             primary: true
-    uses: ash-project/ash/.github/workflows/ash-ci.yml@main
+    uses: shahryarjb/ash/.github/workflows/ash-ci.yml@ci/parameterise-rustler-precompiled-build
     with:
       spark-formatter: false
       spark-cheat-sheets: false
@@ -35,5 +35,6 @@ jobs:
       rust-crate-dir: native/igniter_css
       publish-docs: ${{ matrix.primary }}
       reuse: true
+      release: false
     secrets:
       HEX_API_KEY: ${{ secrets.HEX_API_KEY }}
