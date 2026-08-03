@@ -24,6 +24,11 @@ jobs:
             erlang-version: "default"
             primary: true
     uses: shahryarjb/ash/.github/workflows/ash-ci.yml@ci/parameterise-rustler-precompiled-build
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+      security-events: write
     with:
       spark-formatter: false
       spark-cheat-sheets: false
