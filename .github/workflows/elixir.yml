@@ -23,7 +23,7 @@ jobs:
           - elixir-version: "default"
             erlang-version: "default"
             primary: true
-    uses: shahryarjb/ash/.github/workflows/ash-ci.yml@ci/parameterise-rustler-precompiled-build
+    uses: shahryarjb/ash/.github/workflows/ash-ci.yml@ci/cargo-test-fmt-clippy
     with:
       spark-formatter: false
       spark-cheat-sheets: false
